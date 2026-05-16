@@ -1,0 +1,198 @@
+/* ============================================================
+   style.css — Toyota Corolla Valuation Tool
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap');
+
+/* ── Base ─────────────────────────────────────────────────── */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    background-color: #080d17;
+    color: #e2e8f0;
+}
+
+/* ── Page title ───────────────────────────────────────────── */
+.page-title {
+    font-family: 'Syne', sans-serif !important;
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: #f0f4ff;
+    margin-bottom: 0.15rem;
+    letter-spacing: -0.03em;
+}
+.page-sub {
+    font-size: 0.82rem;
+    color: #475569;
+    margin-bottom: 1.4rem;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────── */
+section[data-testid="stSidebar"] {
+    background: #060b14 !important;
+    border-right: 1px solid #0f1f35;
+}
+section[data-testid="stSidebar"] * { color: #cbd5e1 !important; }
+
+.sidebar-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #f0f4ff !important;
+    margin-bottom: 0.1rem;
+}
+.sidebar-caption {
+    font-size: 0.72rem;
+    color: #334155 !important;
+    margin-bottom: 1rem;
+}
+.sidebar-section {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #6366f1 !important;
+    margin: 1.1rem 0 0.4rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #0f1f35;
+}
+
+/* ── Section labels ───────────────────────────────────────── */
+.section-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: #6366f1;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+}
+.section-desc {
+    font-size: 0.8rem;
+    color: #475569;
+    line-height: 1.55;
+    margin-bottom: 0.8rem;
+}
+
+/* ── Price hero ───────────────────────────────────────────── */
+.price-hero {
+    background: linear-gradient(145deg, #0d1526 0%, #0a1020 100%);
+    border: 1px solid #1e3a5f;
+    border-radius: 16px;
+    padding: 2rem 2.2rem 1.6rem;
+    margin-bottom: 1.4rem;
+}
+.price-hero-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #334155;
+    margin-bottom: 0.5rem;
+}
+.price-hero-value {
+    font-family: 'Syne', sans-serif;
+    font-size: 3.4rem;
+    font-weight: 800;
+    color: #a5b4fc;
+    line-height: 1;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.03em;
+}
+.price-hero-band {
+    font-size: 0.8rem;
+    color: #475569;
+    margin-bottom: 0.4rem;
+}
+.price-hero-band strong { color: #94a3b8; }
+.price-hero-diff {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* ── Sensitivity rows ─────────────────────────────────────── */
+.sens-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 0.35rem;
+    background: #0a1020;
+    border: 1px solid #0f1f35;
+    transition: border-color 0.2s;
+}
+.sens-row:hover { border-color: #6366f1; }
+.sens-label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+.sens-val {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* ── Info card ────────────────────────────────────────────── */
+.info-card {
+    background: #0a1020;
+    border: 1px solid #1e3a5f;
+    border-left: 3px solid #6366f1;
+    border-radius: 10px;
+    padding: 1.2rem 1.4rem;
+    font-size: 0.84rem;
+    color: #94a3b8;
+    line-height: 1.65;
+}
+.info-card strong { color: #c7d2fe; }
+.info-card em     { color: #a5b4fc; font-style: normal; }
+
+/* ── Stat badge ───────────────────────────────────────────── */
+.stat-badge {
+    display: inline-block;
+    background: #0a1020;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-top: 0.4rem;
+}
+
+/* ── Divider ──────────────────────────────────────────────── */
+.divider {
+    height: 1px;
+    background: #0f1f35;
+    margin: 1.6rem 0;
+}
+
+/* ── Tabs ─────────────────────────────────────────────────── */
+button[data-baseweb="tab"] {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+}
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #a5b4fc !important;
+    border-bottom-color: #6366f1 !important;
+}
+
+/* ── Metric cards ─────────────────────────────────────────── */
+div[data-testid="stMetric"] {
+    background: #0a1020;
+    border: 1px solid #0f1f35;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+}
+div[data-testid="stMetric"] label {
+    font-size: 0.65rem !important;
+    letter-spacing: 0.1em !important;
+    color: #334155 !important;
+    text-transform: uppercase;
+}
+div[data-testid="stMetricValue"] {
+    font-family: 'Syne', sans-serif !important;
+    font-size: 1.4rem !important;
+    color: #a5b4fc !important;
+}
+
+/* ── Chrome cleanup ───────────────────────────────────────── */
+#MainMenu, footer, header { visibility: hidden; }
+.block-container { padding-top: 1.8rem; padding-bottom: 2rem; }
