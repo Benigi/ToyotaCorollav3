@@ -1,8 +1,7 @@
+python==3.11
+streamlit
+scikit-learn
 pandas
 numpy
 matplotlib
 seaborn
-scikit-learn
-streamlit
-plotly
-statsmodels
